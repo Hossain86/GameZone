@@ -1,0 +1,92 @@
+
+/* 🌟 Sticky Navbar */
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--nav-bg);
+  color: var(--nav-text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* 🎮 Logo */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 🔍 Search Bar */
+.search-bar {
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  background-color: #ccc;
+}
+
+/* 🌙 Dark Mode Toggle */
+.dark-mode-toggle {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 25px;
+}
+
+/* 🌓 Dark Mode */
+:root {
+  --nav-bg: #ffffff;
+  --nav-text: #333;
+  --button-bg: #f0f0f0;
+  --button-text: #333;
+  --body-bg: #ffffff;
+  --body-text: #000000;
+}
+
+.dark-mode {
+  --nav-bg: #333;
+  --nav-text: #ffffff;
+  --button-bg: #555;
+  --button-text: #ffffff;
+  --body-bg: #121212;
+  --body-text: #ffffff;
+}
+
+body {
+  background-color: var(--body-bg);
+  color: var(--body-text);
+  margin: 0;
+  padding-top: 60px; /* Prevent content from being hidden under sticky navbar */
+}
+@media (max-width: 450px){
+  body {
+    padding-top: 70px;
+  }
+  .navbar-container{
+    padding: 15px 5px;
+  }
+  .logo {
+    font-size: 12px;
+  }
+  .search-bar {
+    padding: 5px 5px;
+    width: 110px;
+    font-size: 12px;
+  }
+  .dark-mode-toggle {
+    padding: 0px 0px;
+    font-size: 12px;
+    width: 70px;
+    margin-right: 5px;
+  }
+}

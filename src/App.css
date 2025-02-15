@@ -1,0 +1,12 @@
+
+body {
+  background-color: white; /* Or any light color */
+  color: black;
+}
+.app-container {
+  display: flex;
+  flex-wrap: wrap; /* ✅ Allows items to adjust */
+  justify-content: center; /* ✅ Centers content */
+  gap: 10px;
+}
+

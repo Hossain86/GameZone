@@ -1,0 +1,100 @@
+.game-container{
+  padding: 15px;
+  width: 90%;
+  max-width: 1250px;
+  height: auto;
+  text-align: center;
+  margin: 0% 8%;
+}
+.game-img {
+  margin: 15px;
+  width: 65%;
+  height: auto;
+  border-radius: 15px;
+  max-width: 800px;
+}
+
+.game-header {
+  font-size: 1.8rem;
+  margin: 15px 0;
+}
+
+
+
+
+.game-details {
+  width: 90%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  padding: 0% 5%;
+  line-height: 1.8;
+  word-spacing: 3px;
+  text-align: justify;
+}
+
+.game-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.game-button:hover {
+  background-color: #0056b3;
+}
+
+.game-lower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.back-button{
+  display: block;
+}
+.reviews-section{
+  display: flex;
+  flex-direction: column;
+}
+.review-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.review-textarea{
+  width:300px;
+  height:100px;
+  padding:5px;
+  border-radius: 10px;
+  background-color: wheat;
+  color: black;
+}
+.game-video {
+  margin: 15px;
+  width: 560px;
+  height: 315px;
+  border-radius: 5px;
+}
+  @media (max-width: 650px) {
+    .game-container{
+      margin: 0% 0%;
+    }
+  .game-details {
+    width: 95%;
+    font-size: 1rem;
+    padding: 0%;
+  }
+  .game-img {
+    margin: 10px 0px;
+    width: 90%;
+  }
+  .game-video {
+    margin: 0px;
+    width: 320px;
+    height: 180px;
+    border-radius: 5px;
+  }
+}  

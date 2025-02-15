@@ -1,0 +1,26 @@
+/* src/components/TrendingGames.css */
+.trending-games-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.trending-games-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.game-card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  width: 220px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.game-image {
+  border-radius: 4px;
+  object-fit: cover;
+}
