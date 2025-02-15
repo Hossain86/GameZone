@@ -6,18 +6,25 @@ import GameDetails from "./assets/components/fastpractice/GameDetails";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./assets/components/fastpractice/Layout";
 
+// Import your new LandingPage
+import LandingPage from "./assets/components/LandingPage/LandingPage";
+
 function App() {
   const [filteredGames, setFilteredGames] = useState(gameData);
+
   return (
     <Router>
       <Routes>
+        {/* 1. Landing Page at "/" */}
+        
+        <Route path="/" element={<LandingPage />} />
+
+        {/* 2. Games route at "/games" using Layout */}
         <Route
-          path="/"
-          element={
-            <Layout games={gameData} setFilteredGames={setFilteredGames} />
-          }
+          path="/game"
+          element={<Layout games={gameData} setFilteredGames={setFilteredGames} />}
         >
-          {/* Use a relative path for nested routes */}
+          {/* Nested index route for "/games" */}
           <Route
             index
             element={
@@ -28,7 +35,8 @@ function App() {
               </div>
             }
           />
-          <Route path="game/:id" element={<GameDetails games={gameData} />} />
+          {/* Game details at "/games/:id" */}
+          <Route path=":id" element={<GameDetails games={gameData} />} />
         </Route>
       </Routes>
     </Router>
