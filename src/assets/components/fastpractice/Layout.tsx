@@ -2,10 +2,24 @@ import { Link, Outlet } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./Layout.css";
 
-// Define Props Type ✅
+interface Game {
+  id: number;
+  imgsrc: string;
+  heading: string;
+  description: string;
+  details: string;
+  releaseDate: string;
+  developer: string;
+  publisher: string;
+  genres: string[]; // ✅ Corrected to an array
+  systemRequirements: string;
+  platforms: string[];
+  youtubeGameplay: string;
+}
+
 interface LayoutProps {
-  games: { id: number; heading: string; genres: string }[]; // Array of game objects
-  setFilteredGames: (games: { id: number; heading: string; genres: string }[]) => void; // Function to update filtered games
+  games: Game[]; // ✅ Update to accept full game objects
+  setFilteredGames: (games: Game[]) => void; // ✅ Accept full objects
 }
 
 const Layout: React.FC<LayoutProps> = ({ games, setFilteredGames }) => {
@@ -38,7 +52,9 @@ const Layout: React.FC<LayoutProps> = ({ games, setFilteredGames }) => {
       {/* Sticky Navbar */}
       <nav className="navbar-container">
         <div className="nav-left">
-          <Link to="/" className="logo">🎮 GameZone</Link>
+          <Link to="/" className="logo">
+            🎮 GameZone
+          </Link>
         </div>
 
         {/* Search Bar */}
@@ -51,7 +67,10 @@ const Layout: React.FC<LayoutProps> = ({ games, setFilteredGames }) => {
         />
 
         {/* Dark Mode Toggle */}
-        <button className="dark-mode-toggle" onClick={() => setDarkMode(!darkMode)}>
+        <button
+          className="dark-mode-toggle"
+          onClick={() => setDarkMode(!darkMode)}
+        >
           {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
         </button>
       </nav>
