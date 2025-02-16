@@ -57,7 +57,7 @@ const LandingPage: React.FC = () => {
         </div>
         <div className={styles.imageContainer}>
           <img /*https://rawg.io/assets/images/cover.117cc320ec2800b9b12092ca23d6e86d.png */
-            src="/image.png"
+            src="/image1.png"
             alt="RAWG Preview"
             className={styles.heroImage}
           />

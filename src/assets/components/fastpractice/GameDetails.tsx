@@ -83,7 +83,6 @@ function GameDetails({ games }: Props) {
           height="315"
           src={game.youtubeGameplay}
           title={game.heading}
-          frameBorder="0"
           className="game-video"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
