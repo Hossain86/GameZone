@@ -71,7 +71,7 @@ const Layout: React.FC<LayoutProps> = ({ games, setFilteredGames }) => {
           className="dark-mode-toggle"
           onClick={() => setDarkMode(!darkMode)}
         >
-          {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+          {darkMode ? "☀️ Light" : "🌙 Dark"}
         </button>
       </nav>
 

@@ -8,6 +8,7 @@ import Layout from "./assets/components/fastpractice/Layout";
 
 // Import your new LandingPage
 import LandingPage from "./assets/components/LandingPage/LandingPage";
+import AddGame from "./assets/components/AddGame/AddGame";
 
 function App() {
   const [filteredGames, setFilteredGames] = useState(gameData);
@@ -16,7 +17,6 @@ function App() {
     <Router>
       <Routes>
         {/* 1. Landing Page at "/" */}
-        
         <Route path="/" element={<LandingPage />} />
 
         {/* 2. Games route at "/games" using Layout */}
@@ -38,6 +38,7 @@ function App() {
           {/* Game details at "/games/:id" */}
           <Route path=":id" element={<GameDetails games={gameData} />} />
         </Route>
+        <Route path="/add-game" element={<AddGame />} />
       </Routes>
     </Router>
   );
