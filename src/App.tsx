@@ -27,7 +27,7 @@ function App() {
             index
             element={
               <div className="app-container">
-                <GeneresIntro />
+                <GeneresIntro games={gameData} setFilteredGames={setFilteredGames}/>
                 <div className="Game-container">
                   {filteredGames.map((game) => (
                     <Block key={game.id} {...game} />

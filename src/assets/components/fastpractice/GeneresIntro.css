@@ -14,3 +14,34 @@
 .intro-container p {
   color: #666;
 }
+.genere-buttons{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 15px;
+  font-size: 15px;
+}
+.genere-buttons button{
+  background-color: #161616;
+  width: auto ;
+  height: 40px;
+}
+@media(max-width:768px){
+  .intro-container{
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .intro-container p{
+    font-size: 14px;
+  }
+  .genere-buttons{
+    margin-top: 10px;
+    gap: 10px;
+    font-size: 12px;
+  }
+  .genere-buttons button{
+    height: 30px;
+  }
+}
