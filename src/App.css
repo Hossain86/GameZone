@@ -2,11 +2,23 @@
 body {
   background-color: white; /* Or any light color */
   color: black;
+  margin: 0px 0px;
+  padding: 0px;
 }
+
 .app-container {
+  flex-wrap: wrap; /* ✅ Allows items to adjust */
+  justify-content: center;
+  margin: 0px 0px;
+  padding: 0px;
+}
+.Game-container{
   display: flex;
   flex-wrap: wrap; /* ✅ Allows items to adjust */
   justify-content: center; /* ✅ Centers content */
   gap: 10px;
+  margin: 0% 0%;
+  padding: 0px;
+  width: 100vw;
 }
 

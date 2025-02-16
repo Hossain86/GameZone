@@ -1,32 +1,3 @@
-// import { useParams } from "react-router-dom";
-// import "./gameDetails.css";
-// interface Props {
-//   games: {
-//     id: number;
-//     imgsrc: string;
-//     heading: string;
-//     description: string;
-//     details: string;
-//   }[];
-// }
-
-// function GameDetails({ games }: Props) {
-//   const { id } = useParams();
-//   const game = games.find((game) => game.id === Number(id));
-
-//   if (!game) return <h2>Game not found</h2>;
-
-//   return (
-//     <div className="game-container">
-//       <p>✨ Explore your favourite games with us. Connect with us for more information✨</p>
-//       <h2 className="game-header">{game.heading}</h2>
-//       <img src={game.imgsrc} alt={game.heading} className="game-img" />
-//       <p className="game-details">{game.details}</p>
-//     </div>
-//   );
-// }
-// export default GameDetails;
-// /src/components/firstpractice/GameDetails.tsx
 import { useParams, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { FaStar, FaRegStar } from "react-icons/fa";
