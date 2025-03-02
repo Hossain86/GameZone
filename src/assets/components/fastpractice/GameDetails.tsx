@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaStar, FaRegStar } from "react-icons/fa";
 import "./gameDetails.css"; // Optional: create this file for styling
 
@@ -25,6 +25,9 @@ interface Props {
 function GameDetails({ games }: Props) {
   const { id } = useParams();
   const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // Find the selected game using the id from the URL
   const game = games.find((g) => g.id === Number(id));
@@ -142,3 +145,7 @@ function GameDetails({ games }: Props) {
 }
 
 export default GameDetails;
+function userEffecct(arg0: () => void, arg1: never[]) {
+  throw new Error("Function not implemented.");
+}
+

@@ -1,13 +1,11 @@
-
 .landingSection {
-  top: 0;
-  right: 0;
   display: flex;
+  flex-wrap:wrap ;
+  margin: 0 auto;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: min(50px, 5vw);
+  max-width: 1250px;
   gap: 2rem;
 }
 .content {
@@ -15,12 +13,13 @@
 }
 
 .content h1 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 2vw, 2rem);
   margin-bottom: 2rem;
 }
 
 .content p {
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+  text-align: justify;
   margin-bottom: 1.5rem;
   line-height: 1.8;
 }

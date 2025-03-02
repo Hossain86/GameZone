@@ -3,17 +3,9 @@
   text-align: center;
   margin-bottom: 20px;
   padding: 15px;
-  background-color: #fff;
   border-radius: 8px;
 }
 
-.intro-container h1 {
-  color: #333;
-}
-
-.intro-container p {
-  color: #666;
-}
 .genere-buttons{
   display: flex;
   justify-content: center;

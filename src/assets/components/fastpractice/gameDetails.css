@@ -1,57 +1,35 @@
 .game-container{
-  padding: 15px;
-  width: 90%;
+  display: grid;
   max-width: 1250px;
-  height: auto;
-  text-align: center;
-  margin: 0% 8%;
+  margin: 0 auto;
+  justify-items: center;
+  text-align: justify;
+  padding: min(50px, 5vw); /* Max 50px, but scales down with viewport */
+  border-radius: 10px;
 }
 .game-img {
-  margin: 15px;
-  width: 65%;
+  max-width: min(600px, 70vw); /* Scales up to 600px but never exceeds 90% of viewport width */
+  min-width: 250px;
   height: auto;
   border-radius: 15px;
-  max-width: 800px;
+  margin: min(10px, 5vw);
 }
 
 .game-header {
-  font-size: 1.8rem;
+  font-size: clamp(1.5rem, 2vw, 2rem);
   margin: 15px 0;
 }
-
-
-
 
 .game-details {
   width: 90%;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
   padding: 0% 5%;
   line-height: 1.8;
   word-spacing: 3px;
   text-align: justify;
 }
 
-.game-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.game-button:hover {
-  background-color: #0056b3;
-}
-
-.game-lower {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-}
 .back-button{
   display: block;
 }
@@ -65,17 +43,18 @@
   align-items: center;
 }
 .review-textarea{
-  width:300px;
-  height:100px;
+  max-width: min(600px, 70vw); /* Scales up to 600px but never exceeds 90% of viewport width */
+  min-width: 250px;
+  height: auto;
   padding:5px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: wheat;
   color: black;
 }
 .game-video {
   margin: 15px;
-  width: 560px;
-  height: 315px;
+  max-width: min(600px, 70vw); /* Scales up to 600px but never exceeds 90% of viewport width */
+  min-width: 280px;
   border-radius: 5px;
 }
   @media (max-width: 650px) {
@@ -84,7 +63,6 @@
     }
   .game-details {
     width: 95%;
-    font-size: 1rem;
     padding: 0%;
   }
   .game-img {

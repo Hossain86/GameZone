@@ -8,7 +8,6 @@
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin: 10px;
-  background-color: white;
 }
 
 .block-img {
@@ -24,7 +23,6 @@
 
 .block-details {
   font-size: 1rem;
-  color: #555;
 }
 
 .block-button {
