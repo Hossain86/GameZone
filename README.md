@@ -1,50 +1,32 @@
-# React + TypeScript + Vite
+# 🎮 GameZone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+GameZone is your go-to destination for exploring a vast collection of video games.  
+With a **powerful and user-friendly interface**, GameZone provides access to:
+✅ **Detailed game information**  
+✅ **Reviews and recommendations**  
+✅ **Latest releases, top-rated classics, and hidden gems**  
 
-Currently, two official plugins are available:
+Discover, explore, and dive into the world of gaming like never before! 🚀  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🛠 **Features**
+🔍 **Search for games**
+⭐ **View game ratings and reviews**
+📜 **Get game descriptions and details**
+🎮 **Browse top-rated games**
 
-## Expanding the ESLint configuration
+ 📸 Screenshots  
+### 🔹 Home Page  
+![GameZone Home](assets/components/LandingPage/image1.png)  
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 🔹 Game Details Page  
+![Game Details](assets/screenshots/game_details.png)  
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🔧 Tech Stack  
+- **Frontend:** Typescript and React, Bootstrap  
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 🚀 Installation  
+1. Clone the repository:  
+   git clone https://github.com/your-username/GameZone.git
