@@ -4,7 +4,7 @@ import "./App.css";
 import gameData from "./assets/components/fastpractice/gameData";
 import GameDetails from "./assets/components/fastpractice/GameDetails";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Layout from "./assets/components/fastpractice/Layout";
+import Layout from "./assets/components/fastpractice/Navbar";
 import LandingPage from "./assets/components/LandingPage/LandingPage";
 import GeneresIntro from "./assets/components/fastpractice/GeneresIntro";
 

@@ -4,7 +4,9 @@ body {
   color: black;
   margin: 0px 0px;
   padding: 0px;
+  
 }
+
 
 .app-container {
   flex-wrap: wrap; /* ✅ Allows items to adjust */
@@ -20,5 +22,10 @@ body {
   margin: 0% 0%;
   padding: 0px;
   width: 100vw;
+}
+h1{
+  background: linear-gradient(to right, #5f5f5f, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 

@@ -1,6 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
 import { useState, useEffect } from "react";
-import "./Layout.css";
+import "./Navbar.css";
 
 interface Game {
   id: number;

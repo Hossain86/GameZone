@@ -5,20 +5,27 @@
   padding: 15px;
   border-radius: 8px;
 }
+.intro-container h2{
+  background: linear-gradient(to right, rgb(225, 81, 3), violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .genere-buttons{
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 20px;
-  gap: 15px;
-  font-size: 15px;
+  margin-top: 15px;
+  gap: 12px;
 }
 .genere-buttons button{
-  background-color: #161616;
   width: auto ;
-  height: 40px;
+  height: 35px;
+  font-size: 15px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  
 }
 @media(max-width:768px){
   .intro-container{
