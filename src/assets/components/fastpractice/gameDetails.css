@@ -22,7 +22,6 @@
 
 .game-details {
   width: 90%;
-  font-family: 'Times New Roman', Times, serif;
   font-size: clamp(1rem, 1.5vw, 1.5rem);
   padding: 0% 5%;
   line-height: 1.8;
