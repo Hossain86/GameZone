@@ -11,7 +11,7 @@ With a **powerful and user-friendly interface**
 ## 📌 Technologies Used
 - **React ⚛️** 
 - **TypeScript 🏗️** 
-- **Tailwind CSS 🎨** 
+- **Bootstrap CSS 🎨** 
 
 ## Discover, explore, and dive into the world of gaming like never before! 🚀  
 
