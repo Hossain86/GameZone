@@ -1,28 +1,30 @@
 # 🎮 GameZone
 
 GameZone is your go-to destination for exploring a vast collection of video games.  
-With a **powerful and user-friendly interface**, GameZone provides access to:<br>
-✅ **Detailed game information**  <br>
-✅ **Reviews and recommendations**  <br>
-✅ **Latest releases, top-rated classics, and hidden gems**  <br>
+With a **powerful and user-friendly interface** 
 
-Discover, explore, and dive into the world of gaming like never before! 🚀  
+## GameZone provides access to:
+- **Detailed game information** 
+- **Reviews and recommendations**
+- **Latest releases, top-rated classics, and hidden gems** 
 
-🛠 **Features**<br>
-🔍 **Search for games**<br>
-⭐ **View game ratings and reviews**<br>
-📜 **Get game descriptions and details**<br>
-🎮 **Browse top-rated games**<br>
+## 📌 Technologies Used
+- **React ⚛️** 
+- **TypeScript 🏗️** 
+- **Tailwind CSS 🎨** 
 
- 📸 Screenshots  
-### 🔹 Home Page  
+## Discover, explore, and dive into the world of gaming like never before! 🚀  
+
+### 🛠 Features
+- 🔍 **Search for games**
+- ⭐ **View game ratings and reviews**
+- 📜 **Get game descriptions and details**<br>
+- 🎮 **Browse top-rated games**<br>
+
+[Visit GameZone](https://game-zone-rho.vercel.app/)
+
+ #### 📸 Screenshots  
 ![GameZone Home](https://game-zone-rho.vercel.app/image1.png)  
-
-
----
-
-## 🔧 Tech Stack  
-- **Frontend:** Typescript and React, Bootstrap  
 
 
 ## 🚀 Installation  
